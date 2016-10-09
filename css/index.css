@@ -1,0 +1,33 @@
+body {
+	font-family: 'Open Pro', sans-serif;
+}
+
+p {
+	font-size: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 0.01rem;
+	color: #525252;
+}
+
+h1 {
+	font-weight: 700;
+	color: #5dd1e4;
+}
+
+/*a {
+	color: #5dd1e4;
+}
+
+a:hover {
+	color: #525252;
+	text-decoration: none;
+	padding: 10px;
+	background-color: #5dd1e4;
+	transition: 0.3s ease-in;
+}*/
+
+.main {
+	padding-top: 30vh;
+	margin-right: 12vw;
+	margin-left: 12vw;
+}
