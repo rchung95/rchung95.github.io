@@ -19,15 +19,23 @@ h1 {
 }
 
 a:hover {
-	color: #525252;
+	color: #fff;
 	text-decoration: none;
 	padding: 10px;
 	background-color: #5dd1e4;
 	transition: 0.3s ease-in;
 }*/
 
+span#bold {
+	font-weight: 700;
+}
+
 .main {
 	padding-top: 30vh;
 	margin-right: 12vw;
 	margin-left: 12vw;
+}
+
+div.links > a {
+	padding-right: 1.2rem;
 }
