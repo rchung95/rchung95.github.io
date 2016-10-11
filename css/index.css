@@ -1,9 +1,9 @@
 body {
-	font-family: 'Open Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 	font-weight: 300;
 	letter-spacing: 0.01rem;
 	color: #525252;
@@ -14,28 +14,48 @@ h1 {
 	color: #5dd1e4;
 }
 
-/*a {
+a, a:visited {
 	color: #5dd1e4;
 }
 
-a:hover {
-	color: #fff;
+a:hover, a:active {
+	color: #525252;
 	text-decoration: none;
-	padding: 10px;
-	background-color: #5dd1e4;
 	transition: 0.3s ease-in;
-}*/
+}
 
 span#bold {
 	font-weight: 700;
 }
 
 .main {
-	padding-top: 30vh;
-	margin-right: 12vw;
-	margin-left: 12vw;
+	padding-top: 20vh;
+	margin-right: 10vw;
+	margin-left: 10vw;
+}
+
+div.main.container > p > a, div.main.container > p > span > a {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+div.main > p > a:hover, div.main.container > p > span > a:hover {
+	border-bottom-color: #525252;
 }
 
 div.links > a {
 	padding-right: 1.2rem;
+	font-size: 1.1rem;
+}
+
+@media (min-width: 900px) {
+	p {
+		font-size: 1.6rem;
+		letter-spacing: 0.01rem;
+	}
+
+	.main {
+		padding-top: 30vh;
+		margin-right: 12vw;
+		margin-left: 12vw;
+	}
 }
