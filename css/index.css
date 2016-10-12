@@ -34,6 +34,12 @@ span#bold {
 	margin-left: 10vw;
 }
 
+.subMain {
+	padding-top: 10vh;
+	margin-right: 5vw;
+	margin-left: 5vw;
+}
+
 div.main.container > p > a, div.main.container > p > span > a {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -57,5 +63,11 @@ div.links > a {
 		padding-top: 30vh;
 		margin-right: 12vw;
 		margin-left: 12vw;
+	}
+
+	.subMain {
+		padding-top: 20vh;
+		margin-right: 10vw;
+		margin-left: 10vw;
 	}
 }
