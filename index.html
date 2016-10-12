@@ -20,12 +20,10 @@
 	<body>
 		<div class="main container">
 			<h1>Raymond Chung</h1>
-			<p>I'm a Front-End &amp; iOS Developer. I am also a <span id="bold">Remote Developer Evangelist</span> in Training at <span id="bold"><a href="https://clarifai.com">Clarifai</a></span>, and <span id="bold">Teaching Assistant</span> at Queen's University. Occasionally you will find me writing <a href="https://medium.com/@rchung95">articles</a> on food, tech, and life.</p>
-			<!-- Debating on removing this part -->
+			<p id="headline">I'm a Front-End &amp; iOS Developer. I am also a <span id="bold">Remote Developer Evangelist</span> in Training at <span id="bold"><a href="https://clarifai.com">Clarifai</a></span>, and <span id="bold">Teaching Assistant</span> at Queen's University. Occasionally you will find me writing <a href="https://medium.com/@rchung95">articles</a> on food, tech, and life.</p>
 			<p>Feel free to connect with me, I love meeting people!</p>
-			<!-- Debating between this or icons -->
 			<div class="links">
-				<a href="#about">About</a>
+				<a id="aboutBtn" href="#"></a>
 				<a href="mailto:raymond_chung2@hotmail.com">Email</a>
 				<a href="https://github.com/rchung95">Github</a>
 				<a href="https://linkedin.com/in/raymondchung95">LinkedIn</a>
@@ -34,11 +32,20 @@
 			</div>
 		</div>
 		
-		<div id="about" class="main container">
-			<p>I will write more here soon</p>
-		</div>
 		<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"></script>
+		<script>
+			var json = '{ "stuff" : [' + '{ "id":"headline" },' + '{ "id":"sub", "detail":"I am a Computer Science & Education student at Queen\'s University in Canada with a huge passion for entrepreneurship, mobile (iOS) and web development hailing from Toronto, Ontario. I tend to develop for the web and iOS devices, where I like to work mainly on the front-end of things. My experience led me to launch a business, run a tech competition, conduct research, and run workshops to empower female professionals and students. I am currently a Remote Developer Evangelist in training at Clarifai, and once I graduate, I hope continue down this path. I am also a huge advocator towards the importance of STEM, and diversity within tech. Away from the computer, I enjoy cooking, playing basketball and soccer and watching shows." } ]}';
+			var obj = JSON.parse(json);
+			document.getElementById("aboutBtn").innerHTML = "About";
+			$(document).ready(function() {
+				$("a#aboutBtn").click(function() {
+					$("p#headline").removeAttr('id', 'headline').attr('id', obj.stuff[1].id);
+					$("p#sub").text(obj.stuff[1].detail);
+					$("a#aboutBtn").text("Return");
+				});
+			});
+		</script>
 	</body>
 </html>

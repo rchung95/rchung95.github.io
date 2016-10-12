@@ -48,7 +48,7 @@ div.links > a {
 }
 
 @media (min-width: 900px) {
-	p {
+	p#headline {
 		font-size: 1.6rem;
 		letter-spacing: 0.01rem;
 	}
