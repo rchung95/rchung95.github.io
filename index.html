@@ -41,13 +41,11 @@
 			$(document).ready(function() {
 				$("a#aboutBtn").click(function() {
 					if (this.innerHTML === "About") {
-						$("main").removeAttr('id', 'main').attr('id', "subMain");
-						$("p#headline").hide();
-						$("p#sub").show();
+						$("p#headline").hide(800);
+						$("p#sub").show(800);
 					} else {
-						$("subMain").removeAttr('id', 'subMain').attr('id', "main");
-						$("p#headline").show();
-						$("p#sub").hide();
+						$("p#sub").hide(800);
+						$("p#headline").show(800);
 					}
 					this.innerHTML = this.innerHTML === "About" ? "Home" : "About";
 				});
