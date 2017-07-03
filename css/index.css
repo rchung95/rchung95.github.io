@@ -42,8 +42,8 @@ span#bold {
 }
 
 #mainhead {
-	/*text-align: center;*/
-	font-size: 5rem;
+	text-align: center;
+	font-size: 3rem;
 }
 
 div.main.container > p > a, div.main.container > p > span > a {
@@ -73,5 +73,9 @@ div.links > a {
 		padding-top: 26vh;
 		margin-right: 12vw;
 		margin-left: 12vw;
+	}
+
+	#mainhead {
+	font-size: 5rem;
 	}
 }
