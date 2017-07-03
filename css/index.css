@@ -1,5 +1,6 @@
 body {
 	font-family: 'Open Sans', sans-serif;
+	text-align: center;
 }
 
 p {
@@ -38,6 +39,11 @@ span#bold {
 	padding-top: 10vh;
 	margin-right: 5vw;
 	margin-left: 5vw;
+}
+
+#mainhead {
+	/*text-align: center;*/
+	font-size: 5rem;
 }
 
 div.main.container > p > a, div.main.container > p > span > a {
