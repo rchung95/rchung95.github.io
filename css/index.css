@@ -10,13 +10,8 @@ p {
 	color: #525252;
 }
 
-h1 {
-	font-weight: 700;
-	color: #5dd1e4;
-}
-
 a, a:visited {
-	color: #5dd1e4;
+	color: #3498DB;
 }
 
 a:hover, a:active {
@@ -30,9 +25,9 @@ span#bold {
 }
 
 .main {
-	padding-top: 14vh;
-	margin-right: 10vw;
-	margin-left: 10vw;
+	padding-top: 26vh;
+	margin-right: 6vw;
+	margin-left: 6vw;
 }
 
 .subMain {
@@ -42,8 +37,9 @@ span#bold {
 }
 
 #mainhead {
+	font-family: "Poppins", sans-serif;
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 div.main.container > p > a, div.main.container > p > span > a {
@@ -54,9 +50,19 @@ div.main > p > a:hover, div.main.container > p > span > a:hover {
 	border-bottom-color: #525252;
 }
 
+div.links {
+	word-spacing: 1.2rem;
+}
+
 div.links > a {
-	padding-right: 1.2rem;
 	font-size: 1.1rem;
+}
+
+div.links > a:hover, a:active {
+	color: #FFF;
+	background-color: #3498DB;
+	padding: 4px;
+	border-radius: 10px;
 }
 
 @media (min-width: 900px) {
@@ -71,11 +77,11 @@ div.links > a {
 
 	.main {
 		padding-top: 26vh;
-		margin-right: 12vw;
-		margin-left: 12vw;
+		margin-right: 18vw;
+		margin-left: 18vw;
 	}
 
 	#mainhead {
-	font-size: 5rem;
+		font-size: 2.6rem;
 	}
 }
