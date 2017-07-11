@@ -14,7 +14,7 @@ a, a:visited {
 	color: #3498DB;
 }
 
-a:hover, a:active {
+a:hover, a:active, a:focus {
 	color: #525252;
 	text-decoration: none;
 	transition: 0.3s ease-in;
@@ -25,7 +25,7 @@ span#bold {
 }
 
 .main {
-	padding-top: 26vh;
+	padding-top: 20vh;
 	margin-right: 6vw;
 	margin-left: 6vw;
 }
@@ -52,7 +52,7 @@ div.links > a {
 	font-size: 1.1rem;
 }
 
-div.links > a:hover, a:active {
+div.links > a:hover, div.links > a:active, div.links > a:focus {
 	color: #FFF;
 	background-color: #3498DB;
 	padding: 4px;
