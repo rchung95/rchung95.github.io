@@ -1,81 +1,50 @@
 body {
-	font-family: 'Open Sans', sans-serif;
-	text-align: center;
-}
-
-p {
-	font-size: 1.1rem;
-	font-weight: 300;
-	letter-spacing: 0.01rem;
-	color: #525252;
+	font-family: 'Poppins', sans-serif;
+	background-color: #282C35;
+	color: #f7f7f7;
+	line-height: 1vh;
 }
 
 a, a:visited {
-	color: #3498DB;
-}
-
-a:hover, a:active, a:focus {
-	color: #525252;
 	text-decoration: none;
-	transition: 0.3s ease-in;
+	color: #7C7C7C;
 }
 
-span#bold {
-	font-weight: 700;
+a:active, a:hover {
+	color: #f7f7f7;
 }
 
-.main {
-	padding-top: 20vh;
-	margin-right: 6vw;
-	margin-left: 6vw;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-size: 4.4vw;
+  letter-spacing: 0.03rem;
+  font-weight: 300;
 }
 
-#mainhead {
-	font-family: "Poppins", sans-serif;
-	text-align: center;
-	font-size: 2rem;
+.social-media {
+	line-height: 4vh;
+	/*text-align: center;*/
+	word-spacing: 3vw;
 }
 
-div.main.container > p > a, div.main.container > p > span > a {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+#red {
+	color: #D85F4D;
 }
 
-div.main > p > a:hover, div.main.container > p > span > a:hover {
-	border-bottom-color: #525252;
+#green {
+	color: #90C03E;
 }
 
-div.links {
-	word-spacing: 1.2rem;
+#blue {
+	color: #2D89D7;
 }
 
-div.links > a {
-	font-size: 1.1rem;
-}
-
-div.links > a:hover, div.links > a:active, div.links > a:focus {
-	color: #FFF;
-	background-color: #3498DB;
-	padding: 4px;
-	border-radius: 10px;
-}
-
-@media (min-width: 900px) {
-	p {
-		font-size: 1.2rem;
-	}
-
-	p#headline {
+@media only screen and (min-width: 900px ) {
+	.flex-container {
 		font-size: 1.6rem;
-		letter-spacing: 0.01rem;
-	}
-
-	.main {
-		padding-top: 26vh;
-		margin-right: 18vw;
-		margin-left: 18vw;
-	}
-
-	#mainhead {
-		font-size: 2.6rem;
 	}
 }
