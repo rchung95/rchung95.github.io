@@ -7,11 +7,13 @@ body {
 
 a, a:visited {
 	text-decoration: none;
-	color: #7C7C7C;
+	color: #90C03E;
 }
 
 a:active, a:hover {
 	color: #f7f7f7;
+	text-decoration: underline;
+	text-decoration-color: #90C03E;
 }
 
 .flex-container {
@@ -23,28 +25,27 @@ a:active, a:hover {
   font-size: 4.4vw;
   letter-spacing: 0.03rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .social-media {
 	line-height: 4vh;
-	/*text-align: center;*/
 	word-spacing: 3vw;
 }
 
-#red {
-	color: #D85F4D;
+.test {
+	max-width: 400px;
+	text-align: center;
+	line-height: 2rem;
 }
 
-#green {
-	color: #90C03E;
-}
-
-#blue {
-	color: #2D89D7;
-}
-
-@media only screen and (min-width: 900px ) {
+@media only screen and (min-width: 600px) {
 	.flex-container {
 		font-size: 1.6rem;
+	}
+
+	.test {
+		max-width: 600px;
+		line-height: 2.6rem;
 	}
 }
