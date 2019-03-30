@@ -5,6 +5,10 @@ body {
 	line-height: 1vh;
 }
 
+b {
+	font-weight: 600;
+}
+
 a, a:visited {
 	text-decoration: none;
 	color: #90C03E;
@@ -29,12 +33,11 @@ a:active, a:hover {
 }
 
 .social-media {
-	line-height: 4vh;
 	word-spacing: 3vw;
 }
 
-.test {
-	max-width: 400px;
+.main {
+	max-width: 380px;
 	text-align: center;
 	line-height: 2rem;
 }
@@ -44,7 +47,7 @@ a:active, a:hover {
 		font-size: 1.6rem;
 	}
 
-	.test {
+	.main {
 		max-width: 600px;
 		line-height: 2.6rem;
 	}
