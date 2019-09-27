@@ -1,3 +1,15 @@
+@font-face {
+	font-family: 'Sofia Pro';
+	font-weight: 100;
+	src: url('../assets/Sofia Pro Ultra Light.otf')
+}
+
+@font-face {
+	font-family: 'Sofia Pro';
+	font-weight: 500;
+	src: url('../assets/Sofia Pro Medium.otf')
+}
+
 body {
 	font-family: 'Sofia Pro', sans-serif;
 	background-color: #FFF;
