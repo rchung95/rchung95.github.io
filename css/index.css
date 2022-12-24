@@ -1,17 +1,5 @@
-@font-face {
-	font-family: 'Sofia Pro';
-	font-weight: 100;
-	src: url('../assets/Sofia Pro Ultra Light.otf')
-}
-
-@font-face {
-	font-family: 'Sofia Pro';
-	font-weight: 500;
-	src: url('../assets/Sofia Pro Medium.otf')
-}
-
 body {
-	font-family: 'Sofia Pro', sans-serif;
+	font-family: 'Mulish', sans-serif;
 	background-color: #FFF;
 	color: #303030;
 	line-height: 1vh;
@@ -29,19 +17,23 @@ a:active, a:hover {
 	text-decoration-color: #3999FF;
 }
 
+span.name {
+	color: #3999FF;	
+}
+
 nav {
 	text-align: right;
 }
 
 .flex-container {
-  	display: flex;
-  	flex-wrap: wrap;
-  	justify-content: center;
-  	align-items: center;
-  	height: 90vh;
-  	font-size: 4.4vw;
-  	letter-spacing: 0.03rem;
-  	font-weight: 100;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+	font-size: 4.4vw;
+	letter-spacing: 0.03rem;
+	font-weight: 100;
 }
 
 .flex-text {
@@ -54,8 +46,16 @@ nav {
 }
 
 .main {
-	font-weight: 500;
+	font-family: "Mulish", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
 	line-height: 1.8rem;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.text-center {
+	text-align: center;
 }
 
 .dark-theme {
@@ -64,7 +64,7 @@ nav {
 	transition: .4s;
 }
 
-.dark-theme a, .dark-theme a:visited {
+.dark-theme span.name, .dark-theme a, .dark-theme a:visited {
 	color: #FFC72C;
 }
 
@@ -136,19 +136,18 @@ input:checked + .slider:before {
 	}
 
 	.flex-text {
-		max-width: 500px;
+		max-width: 60vw;
 		line-height: 2.4rem;
 	}
 	
 	.main {
-		font-size: 2rem;
-		line-height: 0;
+		font-size: 3rem;
+		line-height: 3rem;
 	}
 }
 
 @media only screen and (min-width: 768px) {
 	.flex-text {
-		max-width: 600px;
-		line-height: 2.6rem;
+		max-width: 60vw;
 	}
 }

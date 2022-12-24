@@ -1,8 +1,9 @@
 function changeTheme() {
-    var classList = document.body.classList;
+    const DARK_THEME = 'dark-theme';
+    let classList = document.body.classList;
     if (classList.length > 0) {
-        classList.remove('dark-theme');
+        classList.remove(DARK_THEME);
     } else {
-        classList.add('dark-theme');
+        classList.add(DARK_THEME);
     }   
 }
